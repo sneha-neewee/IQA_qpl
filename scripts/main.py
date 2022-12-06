@@ -12,7 +12,7 @@ df_xls_add = df_xls[df_xls.status == 'add']
 
 print(df_xls_add)
 for _, row in df_xls_add.iterrows():
-    print(row)
+    # print(row)
     if int(row.sr_no) in df_db.sr_no.astype(int):
         print(f"S.No {int(row.sr_no)} exists in DB")
         # db_row = df_db[df_db.sr_no.astype(int) == int(row.sr_no)]
